@@ -18,6 +18,13 @@ black = "^23.7.0"
 isort = "^5.12.0"
 ruff = "^0.0.284"
 mypy = "^1.5.0"
+python-semantic-release = "^8.0.6"
+
+[tool.semantic_release]
+commit_message = "chore(release): :rocket: {version}"
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
 
 [build-system]
 requires = ["poetry-core"]
