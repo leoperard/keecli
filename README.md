@@ -1,2 +1,2 @@
-# keypy
-KeyPy is a cli to the password manager KeePass
+# KeeCLI
+KeeCLI is a cli to the password manager KeePass

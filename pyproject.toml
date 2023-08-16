@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "keypy"
+name = "keecli"
 version = "0.1.0"
-description = "KeyPy is a cli to the password manager KeePass"
+description = "KeeCLI is a cli to the password manager KeePass"
 authors = ["Leo Perard <leo.perard@gmail.com>"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
