@@ -3,8 +3,8 @@ name: Run Tests
 on: [push, pull_request]
 
 jobs:
-  build-n-publish:
-    name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+  build-n-test:
+    name: Build and Test Python 🐍 distributions 📦
     strategy:
       fail-fast: false
       matrix:
