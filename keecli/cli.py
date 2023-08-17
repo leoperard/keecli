@@ -18,8 +18,8 @@ def cli(ctx: click.Context):
     ctx.ensure_object(dict)
 
     # Instanciate the database from the config
-    filepath = os.path.abspath(os.path.expanduser(os.getenv("KEYPY_DB")))
-    ctx.obj["db"] = KeePassDatabase(filepath, os.getenv("KEYPY_PASSWORD"))
+    filepath = os.path.abspath(os.path.expanduser(os.getenv("KEECLI_DB")))
+    ctx.obj["db"] = KeePassDatabase(filepath, os.getenv("KEECLI_PASSWORD"))
 
 
 @cli.command()
