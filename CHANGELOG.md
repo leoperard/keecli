@@ -2,9 +2,42 @@
 
 
 
+## v0.2.0 (2023-08-17)
+
+### Chore
+
+* chore: remove support for python 3.9 ([`7ef2fa4`](https://github.com/leoperard/keecli/commit/7ef2fa4ad8677f3d05c52d281227763e05c34f4a))
+
+### Ci
+
+* ci: small change in the name of the jobs ([`d05a0a0`](https://github.com/leoperard/keecli/commit/d05a0a084cfd7ae5979fb71308a5853bc67d1cc0))
+
+* ci: test the application and publish to pypi if released ([`1874e38`](https://github.com/leoperard/keecli/commit/1874e3829cdd46eb8c72ee73a39448a273f0cf60))
+
+### Documentation
+
+* docs: installation and configuration instructions :page_facing_up: ([`68306c0`](https://github.com/leoperard/keecli/commit/68306c0b70737cf12989dc868bb7f145f17b3c8a))
+
+* docs: add badge when pipeline is succeeding ([`026935e`](https://github.com/leoperard/keecli/commit/026935e2c2629d61187ab5304805efeb45109287))
+
+### Feature
+
+* feat: command to only get the password from an entry :key: ([`830c7ca`](https://github.com/leoperard/keecli/commit/830c7ca16dff890da22caa8343953673e70245ee))
+
+### Refactor
+
+* refactor: rename the expected environment variables to the project name ([`8e58582`](https://github.com/leoperard/keecli/commit/8e585827f8354b62d33c32214a20085422ff0872))
+
+### Unknown
+
+* tests: opening of a kdbx file ([`31ac504`](https://github.com/leoperard/keecli/commit/31ac5041df2d2cf27923e4fc22f3affc94aa81a8))
+
+
 ## v0.1.0 (2023-08-16)
 
 ### Chore
+
+* chore(release): :rocket: 0.1.0 ([`178641b`](https://github.com/leoperard/keecli/commit/178641bde7a1635121e8095ac7e3020541988cbd))
 
 * chore: rename the project to keecli ([`0b47282`](https://github.com/leoperard/keecli/commit/0b47282e97a65945ca32fc78acee8312ba45d987))
 
