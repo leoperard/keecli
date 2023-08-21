@@ -2,9 +2,22 @@
 
 
 
+## v0.2.1 (2023-08-21)
+
+### Ci
+
+* ci: add the password secret to publish to pypi ([`cfc319b`](https://github.com/leoperard/keecli/commit/cfc319bc1c3544f98f5e7f791b99a3145d0113d9))
+
+### Performance
+
+* perf: option to copy the password directly to the clipboard :notebook: ([`ffe10bd`](https://github.com/leoperard/keecli/commit/ffe10bd252ab1e1005924c960dc8082e75d6a60e))
+
+
 ## v0.2.0 (2023-08-17)
 
 ### Chore
+
+* chore(release): :rocket: 0.2.0 ([`25aaf42`](https://github.com/leoperard/keecli/commit/25aaf42ff766ee1f5017fcc6b83437964d8f1cf2))
 
 * chore: remove support for python 3.9 ([`7ef2fa4`](https://github.com/leoperard/keecli/commit/7ef2fa4ad8677f3d05c52d281227763e05c34f4a))
 
