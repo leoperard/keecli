@@ -954,6 +954,16 @@ pycryptodomex = ">=3.6.2"
 python-dateutil = "*"
 
 [[package]]
+name = "pyperclip"
+version = "1.8.2"
+description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyperclip-1.8.2.tar.gz", hash = "sha256:105254a8b04934f0bc84e9c24eb360a591aaf6535c9def5f29d92af107a9bf57"},
+]
+
+[[package]]
 name = "pytest"
 version = "7.4.0"
 description = "pytest: simple powerful testing with Python"
@@ -1238,4 +1248,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f3264150b6cb8fc3b9d1e6e221af6cebd866516950f9e3c3d09b6fb7f9e0b5dc"
+content-hash = "1c88f5d269aa12d96a100b94eca8dde14a568d47a41ef776ce3e6070e06a3724"

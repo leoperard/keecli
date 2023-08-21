@@ -1,9 +1,9 @@
 """Define all the commands interface of the cli"""
-
 import json
 import os
 
 import click
+import pyperclip
 import structlog
 
 from keecli.database import KeePassDatabase
@@ -66,9 +66,18 @@ def get(ctx: click.Context, name: str, group: str, password: bool):
     default=None,
     help="The group where to look for the entry.",
 )
+@click.option(
+    "--copy/--no-copy",
+    default=False,
+    required=False,
+    help="Copy the password to the clipboard (default: false).",
+)
 @click.argument("name", type=click.STRING)
-def password(ctx: click.Context, name: str, group: str):
-    """Get the password for an entry."""
+def password(ctx: click.Context, name: str, group: str, copy: str):
+    """Get the password for an entry.
+
+    If multiple passwords are found, the --copy option is ignored.
+    """
     db = ctx.obj["db"]
     entries = db.get_entry(name, group=group)
 
@@ -79,4 +88,7 @@ def password(ctx: click.Context, name: str, group: str):
         click.echo("No mathcing entry found")
         ctx.exit(1)
 
-    click.echo(entries[0].password)
+    pwd = entries[0].password
+    if copy:
+        pyperclip.copy(pwd)
+    click.echo(pwd)
