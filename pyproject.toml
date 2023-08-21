@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "keecli"
-version = "0.2.1"
+version = "0.2.2"
 description = "KeeCLI is a cli to the password manager KeePass"
 authors = ["Leo Perard <leo.perard@gmail.com>"]
 license = "GPL-3.0-or-later"

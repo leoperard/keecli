@@ -2,7 +2,24 @@
 
 
 
+## v0.2.2 (2023-08-21)
+
+### Ci
+
+* ci: setup python and build wheel to publish to pypi :snake: ([`ff065fd`](https://github.com/leoperard/keecli/commit/ff065fd1b7194dcba0ca1093b85615cbb43c53f0))
+
+### Fix
+
+* fix: allow a more intuitive syntax when getting an entry
+
+use the group/entry syntax to better respect other tools ([`1a32908`](https://github.com/leoperard/keecli/commit/1a3290874e49db248d942786751e078f7f7822b3))
+
+
 ## v0.2.1 (2023-08-21)
+
+### Chore
+
+* chore(release): :rocket: 0.2.1 ([`fea66bd`](https://github.com/leoperard/keecli/commit/fea66bdb609c05f4fc080688a5bb7cfeb5776309))
 
 ### Ci
 
