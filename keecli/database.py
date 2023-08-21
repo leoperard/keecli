@@ -35,15 +35,16 @@ class KeePassDatabase:
         """Open the database file"""
         self._kp = PyKeePass(filename, password)
 
-    def get_entry(self, name: str, group: str) -> Entry:
-        if not group:
-            return self._kp.find_entries_by_title(name, flags="i", regex=True)
+    def get_entry(self, entry_name: str, group_name: str) -> Entry:
+        if not group_name:
+            return self._kp.find_entries_by_title(
+                entry_name, flags="i", regex=True, first=True
+            )
 
-        groups = self._kp.find_groups(name=group, regex=True, flags="i")
-        return [
-            self._kp.find_entries(title=name, group=group, regex=True, flags="i")
-            for group in groups
-        ]
+        group = self._kp.find_groups(name=group_name, regex=True, flags="i", first=True)
+        return self._kp.find_entries(
+            title=entry_name, group=group, regex=True, flags="i", first=True
+        )
 
     def get_entries(self, group: Group) -> list[Entry]:
         return sorted(group.entries, key=lambda entry: entry.title.lower())
